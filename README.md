@@ -1,12 +1,9 @@
-# curriculum-databases-projects-template
+# Vet_Clinic Database
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+> Welcome to the Vet Clinic Database Project repository, your comprehensive solution for effective veterinary clinic management. This project is designed to streamline the organization and management of essential animal information within a veterinary clinic setting. Built with a tech stack tailored to database management, this project empowers veterinary professionals to efficiently track, analyze, and manage their patients' data.
 
 
 ## Getting Started
-
-This repository includes files with plain SQL that can be used to recreate a database:
 
 - Use [schema.sql](./schema.sql) to create all tables.
 - Use [data.sql](./data.sql) to populate tables with sample data.
@@ -14,38 +11,12 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
-
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -63,29 +34,30 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Vet_Clinic] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[Vet_Clinic]** The Vet Clinic Database Project is a comprehensive solution designed to manage and organize crucial information about animals in a veterinary clinic setting. This project aims to provide a well-structured and efficient database system that assists veterinary professionals in tracking and maintaining animal records with ease.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+Database Management System: PostgreSQL
+Languages: SQL
+Key Features: Efficient schema definition, Data population, Query demonstrations
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://github.com/mohashyne/vet_clinic.git/">SQL Files</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://dev.mysql.com/downloads/workbench/">SQL Client</a></li>
   </ul>
 </details>
 
@@ -100,29 +72,17 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+- **[Schema_Definition:] Use the schema.sql file to create a well-structured database schema that accommodates critical animal information, ensuring efficient data organization and retrieval.**
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Data_Population:]  Leverage the data.sql file to populate the database with sample data representing various animals. This pre-populated data allows users to explore the system's functionalities in a real-world context.**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](<replace-with-your-deployment-URL>)
+- **[Query_Demonstrations:] Discover the power of the Vet Clinic Database Project with the queries.sql file. This file contains a range of carefully crafted SQL queries that showcase the system's capabilities. While exploring queries, exercise caution as some might modify the database.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -130,107 +90,89 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
 
 ```sh
- gem install rails
+ - Database Management System
+ - GitHub Repository
+ - SQL Files
+   a:schema.sql
+   b:data.sql
+   d:queries.sql
+ - SQL Client
+ - Basic SQL Knowledge
 ```
- -->
+ 
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/mohashyne/vet_clinic.git
 ```
---->
+
+Access the Project Directory:
+
+```sh
+  cd vet-clinic-database-project
+```
 
 ### Install
 
-Install this project with:
+Install this project with (macOS):
 
-<!--
-Example command:
 
 ```sh
-  cd my-project
-  gem install
+ brew install postgresql
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
 ```sh
-  rails server
+  CREATE DATABASE vet_clinic;
 ```
---->
+
+To Create Tables in the database use the following commands in:
+
+[schema.sql](./schema.sql)
+
+To Insert data in the tables use the following commands in:
+
+[data.sql](./data.sql)
+
+
 
 ### Run tests
 
-To run tests, run the following command:
+To run tests, run the following command in:
 
-<!--
-Example command:
+Check [queries.sql](./queries.sql)
 
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
 
-### Deployment
 
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
-
-## 👥 Authors <a name="authors"></a>
+## 👥 Authors <a name="Muhammad Aminu Salihu"></a>
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Muhammad Aminu Salihu**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@mohashyne](https://github.com/mohashyne)
+- Twitter: [@muhammadslyhu](https://twitter.com/muhammadsalyhu)
+- LinkedIn: [muhammad-salihu-27467a165](https://linkedin.com/in/msalyhu)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[User Authentication and Authorization]  Implement user authentication and authorization mechanisms to ensure that only authorized veterinary professionals can access and manipulate the database. This could involve user roles, access levels, and secure login systems.**
+- [ ] **[Medical Records Integration] Extend the database to include a table for storing medical records of animals. This could include vaccination history, treatment details, diagnoses, and prescribed medications. These records would provide a comprehensive overview of an animal's health.**
+- [ ] **[Appointment Scheduling] Add a module for appointment scheduling and tracking. Veterinary staff could schedule appointments for check-ups, surgeries, and treatments, making it easier to manage patient flow and resources.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -240,52 +182,49 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/mohashyne/vet_clinic/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+🌟 Support the Vet Clinic Database Project! 🌟
 
-If you like this project...
+Join us in transforming veterinary care with cutting-edge technology. Your support empowers us to create a more efficient and compassionate approach to animal healthcare. Share, like, and spread the word to make a real difference in the lives of animals and their caregivers. Together, we're shaping a brighter future for veterinary care.
+
+🐾 Together, We Make a Difference! 🐾
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+Special thanks to Amigoscode and Microverse for their invaluable support and guidance in shaping the Vet Clinic Database Project. Your dedication to education and community-building is truly inspiring.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[Question_1] How can I customize the animal attributes or add new ones to suit my veterinary clinic's needs?**
 
-  - [Answer_1]
+  - [Answer_1] You can modify the schema in the schema.sql file to include additional columns or modify existing ones. Just ensure that you update the data population in the data.sql file accordingly.
 
-- **[Question_2]**
+- **[Question_2] Can I integrate this database with my existing veterinary management software?**
 
-  - [Answer_2]
+  - [Answer_2] While this project provides a standalone database solution, you can adapt and integrate it into your software by exporting the schema and data, and then making necessary adjustments to your existing system's codebase.
+
+  Feel free to reach out if you have more questions!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
+
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
