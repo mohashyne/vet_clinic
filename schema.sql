@@ -1,12 +1,13 @@
 /* Database schema to keep the structure of entire database. */
 
 CREATE TABLE animals (
-id BIGSERIAL NOT NULL PRIMARY KEY,
-name VARCHAR(300) NOT NULL,
-date_of_birth DATE NOT NULL,
-escape_attempts INTEGER,
-neutered BOOLEAN,
-weight_kg DECIMAL );
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    date_of_birth DATE,
+    escape_attempts INT,
+    neutered BOOLEAN,
+    weight_kg DECIMAL
+);
 
 ALTER TABLE animals ADD COLUMN species VARCHAR(255);
 
@@ -51,3 +52,6 @@ CREATE TABLE visits (
     visit_date DATE,
     PRIMARY KEY (vet_id, animal_id, visit_date)
 );
+
+-- Add an email column to the owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
