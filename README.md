@@ -39,6 +39,8 @@
 
 **[Vet_Clinic]** The Vet Clinic Database Project is a comprehensive solution designed to manage and organize crucial information about animals in a veterinary clinic setting. This project aims to provide a well-structured and efficient database system that assists veterinary professionals in tracking and maintaining animal records with ease.
 
+<img src="./assets/schema.png" alt="schema" />
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
