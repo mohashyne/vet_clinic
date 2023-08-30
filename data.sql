@@ -58,6 +58,7 @@ UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Sam Smit
 UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell') WHERE name IN ('Gabumon', 'Pikachu');
 UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Bob') WHERE name IN ('Devimon', 'Plantmon');
 UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond') WHERE name IN ('Charmander', 'Squirtle', 'Blossom');
+UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Dean Winchester') WHERE name IN ('Angemon' , 'Boarmon');
 
 INSERT INTO vets (name, age, date_of_graduation) VALUES 
 ('William Tatcher', 45, '2000-04-23'),
@@ -96,3 +97,10 @@ INSERT INTO visits (vet_id, animal_id, visit_date) VALUES
 (2, (SELECT id FROM animals WHERE name = 'Boarmon'), '2020-08-03'),
 (3, (SELECT id FROM animals WHERE name = 'Blossom'), '2020-05-24'),
 (1, (SELECT id FROM animals WHERE name = 'Blossom'), '2021-01-11');
+
+
+-- This will add 3.594.280 visits considering you have 10 animals, 4 vets, and it will use around ~87.000 timestamps (~4min approx.)
+INSERT INTO visits (animal_id, vet_id, date_of_visit) SELECT * FROM (SELECT id FROM animals) animal_ids, (SELECT id FROM vets) vets_ids, generate_series('1980-01-01'::timestamp, '2021-01-01', '4 hours') visit_timestamp;
+
+-- This will add 2.500.000 owners with full_name = 'Owner <X>' and email = 'owner_<X>@email.com' (~2min approx.)
+insert into owners (full_name, email) select 'Owner ' || generate_series(1,2500000), 'owner_' || generate_series(1,2500000) || '@mail.com';
